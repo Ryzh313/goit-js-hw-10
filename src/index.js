@@ -1,6 +1,6 @@
 import './css/styles.css';
 import { fetchCountries } from './js/fetchCountries';
-import { countryCardTeemplate, countryListTemplate } from './js/markupTemplate';
+import { countryСardTeemplate, countryListTemplate } from './js/markupTemplate';
 import { refs } from './js/refs-elements';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import debounce from 'lodash.debounce';
@@ -32,7 +32,7 @@ function onInputCountry() {
       }
 
       if (countrys.length === 1) {
-        const markup = countrys.map(country => countryCardTeemplate(country));
+        const markup = countrys.map(country => countryСardTeemplate(country));
         refs.countryInfo.innerHTML = markup.join('');
         refs.countryList.innerHTML = '';
       }
