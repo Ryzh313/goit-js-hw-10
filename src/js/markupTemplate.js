@@ -1,4 +1,4 @@
-export function countryCardTeemplate({ flags, name, capital, population, languages }) {
+export function countryСardTeemplate({ flags, name, capital, population, languages }) {
   return `
     <div class="country-info__container">
       <div class="country-info__wrapper">
